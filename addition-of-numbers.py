@@ -1,6 +1,6 @@
-a = 1
-b = 2
+a = input ('Enter a number: ')
+b = input ('Enter another number: ')
 
-c = a+b
+sum = a+b
 
 print(c)
