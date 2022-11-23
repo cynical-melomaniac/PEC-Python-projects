@@ -2,7 +2,7 @@ try:
     a = eval(input("Enter number 1: "))
     b = eval(input("Enter number 2: "))
     c = eval(input("Enter number 3: "))
-    
+
     if a > b and a > c:
         print(a, "is the greatest")
     if b > a and b > c:
@@ -12,3 +12,5 @@ try:
 
 except:
     print ("Enter a valid number!")
+
+print("Program exited with code 1.")
