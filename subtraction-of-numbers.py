@@ -5,8 +5,8 @@ try:
     a = eval(a)
     b = eval(b)
     
-    sum = a+b
-    print(sum)
+    subtract = a-b
+    print(subtract)
 
 except:
     print ("Enter a valid number!")
