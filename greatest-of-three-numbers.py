@@ -1,3 +1,5 @@
+#To find greatest of three numbers
+
 #Try to use input to evaulate the greatest of the numbers
 try:
     #Get input from user

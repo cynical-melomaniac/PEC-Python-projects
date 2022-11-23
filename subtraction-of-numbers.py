@@ -1,3 +1,5 @@
+#To find subtract of two numbers
+
 #Get input from user
 a = input ('Enter a number: ')
 b = input ('Enter another number: ')
