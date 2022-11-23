@@ -1,5 +1,5 @@
-a = input ('Enter a number: ')
-b = input ('Enter another number: ')
+a = eval(input ('Enter a number: '))
+b = eval(input ('Enter another number: '))
 
 sum = a+b
 
