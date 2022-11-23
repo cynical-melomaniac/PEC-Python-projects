@@ -3,4 +3,4 @@ b = input ('Enter another number: ')
 
 sum = a+b
 
-print(c)
+print(sum)
