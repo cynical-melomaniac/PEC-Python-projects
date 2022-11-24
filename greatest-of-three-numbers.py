@@ -21,4 +21,3 @@ try:
 except:
     print ("Enter a valid number!")
     print("Program exited with code 1.")
-
