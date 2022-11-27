@@ -7,8 +7,7 @@ class Application(tk.Frame):
         self.createWidgets()
 
     def createWidgets(self):
-        self.quitButton = tk.Button(self, text='Quit',
-            command=self.quit)            
+        self.quitButton = tk.Button(self, text='Quit', command=self.quit)            
         self.quitButton.grid()            
 
 app = Application()                       
