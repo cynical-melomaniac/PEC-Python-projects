@@ -11,5 +11,5 @@ class Application(tk.Frame):
         self.quitButton.grid()
 
 app = Application()
-app.master.title('Sample application')
+app.master.title('App?')
 app.mainloop()
