@@ -1,6 +1,5 @@
 #To find out how many minutes and seconds are there in given amount of seconds
 
-
 try:
     #Get raw seconds input
     seconds_raw = eval(input("Enter number of seconds: "))
