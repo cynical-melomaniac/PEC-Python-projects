@@ -1,7 +1,8 @@
 ﻿  PEC-C++-Projects.cpp
-C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(58,12): warning C4566: character represented by universal-character-name '\U0001FAE1' cannot be represented in the current code page (1252)
-C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(97,12): warning C4566: character represented by universal-character-name '\U0001FAE1' cannot be represented in the current code page (1252)
-C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(144,11): warning C4566: character represented by universal-character-name '\U0001FAE1' cannot be represented in the current code page (1252)
-C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(299,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(300,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(65,12): warning C4566: character represented by universal-character-name '\U0001FAE1' cannot be represented in the current code page (1252)
+C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(104,12): warning C4566: character represented by universal-character-name '\U0001FAE1' cannot be represented in the current code page (1252)
+C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(147,12): warning C4566: character represented by universal-character-name '\U0001FAE1' cannot be represented in the current code page (1252)
+C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(153,11): warning C4566: character represented by universal-character-name '\U0001FAE1' cannot be represented in the current code page (1252)
+C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(308,13): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\PEC-C++-Projects.cpp(309,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   PEC-C++-Projects.vcxproj -> C:\Projects\PEC-Python-projects\C++ rework\PEC-C++-Projects\x64\Debug\PEC-C++-Projects.exe

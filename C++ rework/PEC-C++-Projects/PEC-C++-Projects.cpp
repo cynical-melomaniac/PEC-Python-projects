@@ -17,6 +17,13 @@ int income_tax();
 int min_and_sec();
 int sin_and_cos();
 
+int bitwise_operators();
+int details_of_student();
+int greatest_of_three_numbers();
+int string_manipulation();
+int substring_checking();
+int triangle_checking();
+
 int main()
 {
 START:
@@ -105,40 +112,42 @@ START:
 		cout << " 2) Details of student \n";
 		cout << " 3) Greatest of three numbers \n";
 		cout << " 4) String manipulation \n";
-		cout << " 5) Checking for validity of triangles \n";
+		cout << " 5) Substring Checking \n";
+		cout << " 6) Checking for validity of triangles \n";
 
 		cout << "Enter option: ";
 		cin >> code_index_within_set;
 
 		system("cls");
 
-		break;
-
-		/*switch (code_index_within_set)
+		switch (code_index_within_set)
 		{
 		case 0:
 			return 0;
 			break;
 		case 1:
-			add_different_types_of_objects();
+			bitwise_operators();
 			break;
 		case 2:
-			average_of_three_numbers();
+			details_of_student();
 			break;
 		case 3:
-			income_tax();
+			greatest_of_three_numbers();
 			break;
 		case 4:
-			min_and_sec();
+			string_manipulation();
 			break;
 		case 5:
-			sin_and_cos();
+			substring_checking();
+			break;
+		case 6:
+			triangle_checking();
 			break;
 		default:
 			cout << "🫡";
 			break;
 		}
-		break;*/
+		break;
 
 	default:
 		cout << "🫡";
@@ -284,7 +293,7 @@ int min_and_sec()
 	int minutes = (raw_seconds - (raw_seconds % 60)) / 60;
 	int seconds = raw_seconds % 60;
 
-	cout << raw_seconds << "seconds have " << minutes << "minutes and " << seconds << "seconds.\n";
+	cout << raw_seconds << " seconds have " << minutes << " minutes and " << seconds << " seconds.\n";
 
 	return 0;
 }
@@ -301,5 +310,91 @@ int sin_and_cos()
 		cout << i * 15 << " --- " << setprecision(5) << sine << setprecision(5) << cosine << endl;
 	}
 
+	return 0;
+}
+
+int bitwise_operators()
+{
+	int a = 56;
+	int b = 10;
+
+	cout << a << " " << b << endl;
+
+	cout << (a & b)  << endl;
+	cout << (a | b) << endl;
+	cout << (a ^ b) << endl;
+
+	cout << (a << 2) << endl;
+	cout << (b << 2) << endl;
+	
+	cout << (a >> 2) << endl;
+	cout << (b >> 4) << endl;
+
+	return 0;
+}
+
+int details_of_student()
+{
+	string name = "Parth";
+	int sid = 22106026;
+	string department_name = "CSE DS";
+	float cgpa = 10.0f;
+
+	cout << "Hey, " << name << " here!" << endl;
+	cout << "My SID is " << sid << endl;
+	cout << "I am from " << department_name << " department and my CGPA is " << cgpa << endl;
+
+	return 0;
+}
+
+int greatest_of_three_numbers()
+{
+	int a, b, c;
+	cout << "Enter number 1: ";
+	cin >> a;
+	cout << "Enter number 2: ";
+	cin >> b;
+	cout << "Enter number 3: ";
+	cin >> c;
+
+	if (a > b && a > c)
+	{
+		cout << a << " is the greatest.\n";
+	}
+	if (b > a && b > c)
+	{
+		cout << b << " is the greatest.\n";
+	}
+	if (c > a && c > b)
+	{
+		cout << c << " is the greatest.\n";
+	}
+
+	return 0;
+}
+
+int string_manipulation()
+{
+	string given_string = "Python is a case sensitive language. So is C++.";
+
+	cout << "Length of string: " << given_string.length() << endl;
+	
+	string reversed_string = given_string;
+	reverse(reversed_string.begin(), reversed_string.end());
+
+	cout << "String reversed: " << reversed_string << endl;
+
+	//string sliced_string;
+
+	cout << "Sliced string is: (fucked in C++ so I need to do some background shenanigans)" /*<< sliced_string*/ << endl;
+
+	return 0;
+}
+int substring_checking()
+{
+	return 0;
+}
+int triangle_checking()
+{
 	return 0;
 }
