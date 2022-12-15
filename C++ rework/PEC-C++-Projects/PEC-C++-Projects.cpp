@@ -29,7 +29,7 @@ int main()
 START:
 
 	cout << "This is a recreation of all Python code made in PEC in C++. \n Here is a list of all code which can be run: \n";
-	cout << " 0) Misc. Code \n 1) Assignment-1 \n 2) Assignment-2 \n";
+	cout << " 0) Exit \n 1) Assignment-1 \n 2) Assignment-2 \n 9) Misc. Code\n";
 
 	int code_set;
 	cout << "Enter option: ";
@@ -40,31 +40,7 @@ START:
 	switch (code_set)
 	{
 	case 0:
-		cout << " 0) Exit  \n 1) Addition of numbers \n 2) Subtraction of numbers \n 3) 'Hello World' \n";
-
-		cout << "Enter option: ";
-		cin >> code_index_within_set;
-
-		system("cls");
-
-		switch (code_index_within_set)
-		{
-		case 0:
-			return 0;
-			break;
-		case 1:
-			add();
-			break;
-		case 2:
-			subtract();
-			break;
-		case 3:
-			hello_world();
-			break;
-		default:
-			cout << "🫡";
-			break;
-		}
+		return 0;
 		break;
 
 	case 1:
@@ -142,6 +118,34 @@ START:
 			break;
 		case 6:
 			triangle_checking();
+			break;
+		default:
+			cout << "🫡";
+			break;
+		}
+		break;
+	
+	case 9:
+		cout << " 0) Exit  \n 1) Addition of numbers \n 2) Subtraction of numbers \n 3) 'Hello World' \n";
+
+		cout << "Enter option: ";
+		cin >> code_index_within_set;
+
+		system("cls");
+
+		switch (code_index_within_set)
+		{
+		case 0:
+			return 0;
+			break;
+		case 1:
+			add();
+			break;
+		case 2:
+			subtract();
+			break;
+		case 3:
+			hello_world();
 			break;
 		default:
 			cout << "🫡";
@@ -388,13 +392,56 @@ int string_manipulation()
 
 	cout << "Sliced string is: (fucked in C++ so I need to do some background shenanigans)" /*<< sliced_string*/ << endl;
 
+	string replaced_string = given_string;
+	given_string.replace(10, 16, "object oriented");
+	cout << "String replaced 'a case sensitive' with 'object oriented' is: " << replaced_string << endl;
+
+	cout << "Index of substring 'a': " << given_string.find('a') << endl;
+
+	string removed_whitespaces_string = given_string;
+	removed_whitespaces_string.erase(remove_if(removed_whitespaces_string.begin(), removed_whitespaces_string.end(), std::isspace), removed_whitespaces_string.end());
+	cout << "String with removed whitespaces: " << removed_whitespaces_string << endl;
+
 	return 0;
 }
+
 int substring_checking()
 {
+	string input_string, input_name;
+
+	cout << "Input a string with a name (It dosen't really work with whitespaces right now): ";
+	cin >> input_string;
+
+	cout << "Input the name: ";
+	cin >> input_name;
+
+	if (input_string.rfind(input_name) != NULL)
+	{
+		cout << "Yes" << endl;
+		return 0;
+	}
+
+	cout << "No" << endl;
 	return 0;
 }
+
 int triangle_checking()
 {
+	int side_a, side_b, side_c;
+
+	cout << "Enter the first side of the triangle:";
+	cin >> side_a;
+	cout << "Enter the second side of the triangle:";
+	cin >> side_b;
+	cout << "Enter the third side of the triangle:";
+	cin >> side_c;
+
+	if ((side_a + side_b) > side_c || (side_b + side_c) > side_a || (side_a + side_c) > side_b)
+	{
+		cout << "Yes\n";
+		return 0;
+	}
+
+	cout << "No\n";
 	return 0;
 }
