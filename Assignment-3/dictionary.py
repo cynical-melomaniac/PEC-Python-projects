@@ -22,10 +22,13 @@ while (option != 0):
 
         if (option == 1):
             print(student_dict)
+
         elif (option == 2):
             print("Dude")
+
         elif (option == 3):
             print("atleast teach the fucking algo.")
+
         elif (option == 4):
             _search_sid = int(input("Enter SID to search: "))
             print(student_dict[_search_sid])
