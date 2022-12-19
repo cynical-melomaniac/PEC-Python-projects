@@ -5,7 +5,7 @@ try:
     seconds_raw = eval(input("Enter number of seconds: "))
 
     #get time from raw seconds
-    minutes = int(seconds_raw / 60)
+    minutes = seconds_raw // 60
     seconds = seconds_raw % 60
 
     #display output

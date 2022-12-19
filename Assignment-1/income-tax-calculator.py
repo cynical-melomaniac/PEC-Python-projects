@@ -2,7 +2,7 @@
 
 try:
     #Get gross income
-    income = eval(input("Enter Gross Income: "))
+    income = float(input("Enter Gross Income: "))
     
     standard_deduction = 10000      #Standard Deduction
 
