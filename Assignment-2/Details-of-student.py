@@ -1,12 +1,7 @@
-# name = str("Parth")
-# sid = int("22106026")
-# department_name = str("CSE DS")
-# cgpa = float("10.0")
-
-name = str(input("Enter your name: "))
-sid = int(input("Enter your sid: "))
-department_name = str(input("Enter your department name: "))
-cgpa = float(input("Enter your cgpa: "))
+name = str("Parth")
+sid = int("22106026")
+department_name = str("CSE DS")
+cgpa = float("10.0")
 
 print("\nHey,", name, "here!")
 print("My SID is", sid)
