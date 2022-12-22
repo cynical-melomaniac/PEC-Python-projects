@@ -29,6 +29,7 @@ while (option != 0):
         print("2) Sort dictionary by student names")
         print("3) Sort dictionary by SID")
         print("4) Search")
+        print("0) Exit")
 
         option = int(input("Enter an option: "))
 
@@ -53,3 +54,7 @@ while (option != 0):
             #Search by SID
             _search_sid = int(input("Enter SID to search: "))
             print(student_dict[_search_sid])
+        elif (option == 0):
+            print("Exiting Application...")
+        else:
+            print("Enter valid option")
