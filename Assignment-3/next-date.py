@@ -10,8 +10,7 @@ if date >= 1 and month >= 1 and year >= 1800:
 
 if date > 28 and month == 2:
     if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
-        date = 1
-        month += 1
+        date += 1
 
 if date > 29 and month == 2:
     date = 1
