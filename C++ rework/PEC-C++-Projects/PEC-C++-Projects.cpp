@@ -24,6 +24,8 @@ int string_manipulation();
 int substring_checking();
 int triangle_checking();
 
+int next_date();
+
 int main()
 {
 START:
@@ -158,9 +160,6 @@ START:
 		break;
 	}
 
-
-	// Lets speedrun all python code.
-
 	string exit_string;
 	cout << "Exit? (y/n): ";
 	cin >> exit_string;
@@ -183,14 +182,15 @@ int add()
 	int num2;
 
 	cout << "Addition of two numbers.\n";
-	cout << "	Enter number 1:";
+	cout << "Enter number 1:";
 	cin >> num1;
-	cout << "	Enter number 2:";
+	cout << "Enter number 2:";
 	cin >> num2;
 
 	cout << "Sum of the numbers: " << (num1 + num2) << endl;
 
 	return 0;
+
 }
 
 int subtract()
@@ -373,7 +373,7 @@ int greatest_of_three_numbers()
 	{
 		cout << c << " is the greatest.\n";
 	}
-
+	
 	return 0;
 }
 
