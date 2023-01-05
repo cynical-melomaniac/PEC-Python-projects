@@ -11,7 +11,7 @@ if month in oddMonths:
         date = 1
         month += 1
 
-if month not in oddMonths:
+elif month not in oddMonths:
     
     date += 1
     
@@ -20,7 +20,7 @@ if month not in oddMonths:
             date = 1
             month += 1
 
-    if month == 2:
+    elif month == 2:
         
         leap_year = False
         
