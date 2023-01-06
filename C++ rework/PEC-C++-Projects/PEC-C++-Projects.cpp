@@ -7,16 +7,19 @@ constexpr auto PI = 3.141;
 
 using namespace std;
 
+//Misc. Code
 int add();
 int subtract();
 int hello_world();
 
+//Assignment-1
 int add_different_types_of_objects();
 int average_of_three_numbers();
 int income_tax();
 int min_and_sec();
 int sin_and_cos();
 
+//Assignment-2
 int bitwise_operators();
 int details_of_student();
 int greatest_of_three_numbers();
@@ -24,14 +27,18 @@ int string_manipulation();
 int substring_checking();
 int triangle_checking();
 
+//Assignment-3
 int next_date();
+
+//Assignment-4
+
 
 int main()
 {
 START:
 
 	cout << "This is a recreation of all Python code made in PEC in C++. \n Here is a list of all code which can be run: \n";
-	cout << " 0) Exit \n 1) Assignment-1 \n 2) Assignment-2 \n 9) Misc. Code\n";
+	cout << " 0) Exit \n 1) Assignment-1 \n 2) Assignment-2 \n 3) Assignment-3 \n 4) Assignment-4 \n 9) Misc. Code\n";
 
 	int code_set;
 	cout << "Enter option: ";
@@ -126,7 +133,50 @@ START:
 			break;
 		}
 		break;
-	
+
+	case 3:
+		cout << " 0) Exit \n";
+		cout << " 1) Bitwise operators \n";
+		cout << " 2) Details of student \n";
+		cout << " 3) Greatest of three numbers \n";
+		cout << " 4) String manipulation \n";
+		cout << " 5) Substring Checking \n";
+		cout << " 6) Checking for validity of triangles \n";
+
+		cout << "Enter option: ";
+		cin >> code_index_within_set;
+
+		system("cls");
+
+		switch (code_index_within_set)
+		{
+		case 0:
+			return 0;
+			break;
+		case 1:
+			bitwise_operators();
+			break;
+		case 2:
+			details_of_student();
+			break;
+		case 3:
+			greatest_of_three_numbers();
+			break;
+		case 4:
+			string_manipulation();
+			break;
+		case 5:
+			substring_checking();
+			break;
+		case 6:
+			triangle_checking();
+			break;
+		default:
+			cout << "🫡";
+			break;
+		}
+		break;
+
 	case 9:
 		cout << " 0) Exit  \n 1) Addition of numbers \n 2) Subtraction of numbers \n 3) 'Hello World' \n";
 
@@ -444,4 +494,107 @@ int triangle_checking()
 
 	cout << "No\n";
 	return 0;
+}
+
+int next_date()
+{
+	int date, month, year;
+	cout << "Enter date:";
+	cin >> date;
+	cout << "Enter month:";
+	cin >> month;
+	cout << "Enter year:";
+	cin >> year;
+
+	int oddmonths[] = { 1, 3, 5, 7, 8, 10, 12 };
+
+	if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+	{
+		if (date < 31)
+		{
+			date++;
+		}
+		else if (date == 31)
+		{
+			date = 1;
+			month++;
+		}
+	}
+	else if (month == 4 || month == 6 || month == 9 || month == 11)
+	{
+		if (date < 30)
+		{
+			date++;
+		}
+		else if (date == 30)
+		{
+			date = 1;
+			month++;
+		}
+	}
+	else if (month == 2)
+	{
+		if (year % 4 == 0)
+		{
+			if (year % 100 == 0)
+			{
+				if (year % 400 == 0)
+				{
+					if (date < 29)
+					{
+						date++;
+					}
+					else if (date == 29)
+					{
+						date = 1;
+						month++;
+					}
+				}
+				else
+				{
+					if(date < 28)
+					{
+						date++;
+					}
+
+					else if (date == 28)
+					{
+						date = 1;
+						month++;
+					}
+				}
+			}
+			else
+			{
+				if (date < 29)
+				{
+					date++;
+				}
+
+				else if (date == 29)
+				{
+					date = 1;
+					month++;
+				}
+			}
+		}
+		else
+		{
+			if (date < 28)
+			{
+				date++;
+			}
+
+			else if (date == 28)
+			{
+				date = 1;
+				month++;
+			}
+		}
+	}
+	else
+	{
+		INCORRECT_DATE:
+		cout << "The date entered is incorrect.\n";
+	}
 }
