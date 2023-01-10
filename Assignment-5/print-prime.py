@@ -8,14 +8,24 @@ if (lower_bound > upper_bound):
     upper_bound = lower_bound
     lower_bound = temp_lower_bound
 
-divisible_exist = False
+primes = []
 
 for i in range(lower_bound, upper_bound + 1):
-    for j in range(2, i):
-        if (i % j != 0):
-            print(i)
-        divisible_exist = True
+    
+    flag = 0
 
+    if i < 2:
+        continue
+    if i == 2:
+        primes.append(2)
+        continue
 
-if not divisible_exist:
-    print("No numbers are divisible!")
+    for x in range(2, i):
+        if i % x == 0:
+            flag = 1
+            break
+
+    if flag == 0:
+        primes.append(i)
+        
+print(primes)
